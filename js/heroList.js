@@ -1,10 +1,9 @@
 (function(angular) {
     'use strict';
     function HeroListController($scope, $element, $attrs) {
-        var ctrl = this;
+        var HLC = this;
 
-        // This would be loaded by $http etc.
-        ctrl.list = [
+        HLC.list = [
             {
                 name: 'Superman',
                 location: ''
@@ -12,23 +11,27 @@
             {
                 name: 'Batman',
                 location: 'Wayne Manor'
+            },
+            {
+                name: 'Spiderman',
+                location: 'NYC'
             }
         ];
 
-        ctrl.updateHero = function(hero, prop, value) {
+        HLC.updateHero = function(hero, prop, value) {
             hero[prop] = value;
         };
 
-        ctrl.deleteHero = function(hero) {
-            var idx = ctrl.list.indexOf(hero);
+        HLC.deleteHero = function(hero) {
+            var idx = HLC.list.indexOf(hero);
             if (idx >= 0) {
-                ctrl.list.splice(idx, 1);
+                HLC.list.splice(idx, 1);
             }
         };
     }
 
     angular.module('heroApp').component('heroList', {
-        templateUrl: 'heroList.html',
+        templateUrl: 'html/heroList.html',
         controller: HeroListController
     });
 })(window.angular);

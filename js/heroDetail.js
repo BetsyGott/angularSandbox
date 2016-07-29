@@ -13,7 +13,7 @@
     }
 
     angular.module('heroApp').component('heroDetail', {
-        templateUrl: 'heroDetail.html',
+        templateUrl: 'html/heroDetail.html',
         controller: HeroDetailController,
         bindings: {
             hero: '<',
