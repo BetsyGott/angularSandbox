@@ -1,25 +1,21 @@
 <div class="card">
-        <div class="header">Create an Account</div>
-        <div class="content">
-            <form method="#" action="#">
-                <div class="form-group">
-                    <label>First Name</label>
-                    <input type="text" placeholder="First Name" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Last Name" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Email address</label>
-                    <input type="email" placeholder="Enter email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" placeholder="Password" class="form-control">
+    <div class="header">Create an Account</div>
+        <form method="#" action="#">
+
+            <div class="content">
+                <ng-transclude>
+
+
+
+                </ng-transclude>
+
+                <div class="footer">
+                    <!--button component goes here?-->
+                    <button type="submit" class="btn btn-fill btn-info">Register</button>
                 </div>
 
-                <button type="submit" class="btn btn-fill btn-info">Register</button>
-            </form>
-        </div>
+            </div>
+
+        </form>
+
 </div>

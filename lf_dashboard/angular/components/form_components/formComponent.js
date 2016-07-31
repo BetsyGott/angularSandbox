@@ -7,6 +7,7 @@
 
     angular.module('myApp').component('formComponent', {
         templateUrl: 'angular/components/form_components/form_component.html',
+        transclude: true,
         controller: formComponentController,
         controllerAs: "fc"
     });
