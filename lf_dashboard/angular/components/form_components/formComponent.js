@@ -8,12 +8,11 @@
 
     angular.module('myApp').component('formComponent', {
         templateUrl: 'angular/components/form_components/form_component.html',
-        // transclude: true,
-    transclude: {
-        'header': '?formHeader',
-        'body': 'formBody',
-        'footer': '?formFooter'
-    },
+        transclude: {
+            'header': 'formHeader',
+            'body': 'formBody',
+            'footer': 'formFooter'
+        },
         controller: formComponentController,
         controllerAs: "fc"
     });
