@@ -33,29 +33,21 @@
     <form-component>
         <form-header>Create An Account</form-header>
         <form-body>
-            <!--<div class="form-group">-->
-                <!--<label>First Name</label>-->
-                <!--<input type="text" placeholder="First Name" class="form-control">-->
-            <!--</div>-->
 
             <input-component label="First Name" field-type="text"></input-component>
 
-            <div class="form-group">
-                <label>Last Name</label>
-                <input type="text" placeholder="Last Name" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Email address</label>
-                <input type="email" placeholder="Enter email" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" placeholder="Password" class="form-control">
-            </div>
+            <input-component label="Last Name" field-type="text"></input-component>
+
+            <input-component label="Email Address" placeholder="Enter email" field-type="email"></input-component>
+
+            <input-component label="Password" placeholder="Enter password" field-type="text"></input-component>
+
         </form-body>
+
         <form-footer>
             <button-component></button-component>
         </form-footer>
+
     </form-component>
 
 </body>
