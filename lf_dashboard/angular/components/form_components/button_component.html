@@ -1,1 +1,6 @@
-<button type="submit" class="btn btn-fill btn-info">Register</button>
+
+    <button class="btn btn-fill btn-default" ng-hide="{{$ctrl.isFirstPage}}">Back</button>
+
+    <button class="btn btn-fill btn-default" ng-show="{{$ctrl.canCancel}}">Cancel</button>
+
+    <button type="submit" class="btn btn-fill btn-info">{{$ctrl.label}}</button>
