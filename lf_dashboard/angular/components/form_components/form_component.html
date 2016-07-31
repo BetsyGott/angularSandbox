@@ -1,20 +1,9 @@
 <div class="card">
-    <div class="header">Create an Account</div>
+    <div class="header" ng-transclude="header"></div>
         <form method="#" action="#">
 
-            <div class="content">
-                <ng-transclude>
-
-
-
-                </ng-transclude>
-
-                <div class="footer">
-                    <!--button component goes here?-->
-                    <button type="submit" class="btn btn-fill btn-info">Register</button>
-                </div>
-
-            </div>
+            <div class="content" ng-transclude="body"></div>
+            <div class="footer" ng-transcude="footer"></div>
 
         </form>
 

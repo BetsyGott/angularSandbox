@@ -13,6 +13,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="angular/main.js"></script>
     <script src="angular/components/form_components/formComponent.js"></script>
+    <script src="angular/components/form_components/buttonComponent.js"></script>
 
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -29,22 +30,28 @@
 <body ng-app="myApp">
 
     <form-component>
-        <div class="form-group">
-            <label>First Name</label>
-            <input type="text" placeholder="First Name" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" placeholder="Last Name" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>Email address</label>
-            <input type="email" placeholder="Enter email" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>Password</label>
-            <input type="password" placeholder="Password" class="form-control">
-        </div>
+        <form-header>Here's some text</form-header>
+        <form-body>
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="First Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last Name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" placeholder="Enter email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="Password" class="form-control">
+            </div>
+        </form-body>
+        <form-footer>
+            <button-component></button-component>
+        </form-footer>
     </form-component>
 
 </body>
