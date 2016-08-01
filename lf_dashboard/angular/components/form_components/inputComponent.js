@@ -21,6 +21,7 @@
                 ctrl.fieldType = 'text';
             }
 
+            //format the input name to use as placeholder/label if necessary
             if(ctrl.name.indexOf('_') === -1) {
                 //if not underscore, treat as if camelCase
                 formattedName = ctrl.name.replace(/([A-Z]+)/g, "$1").replace(/([A-Z][a-z])/g, " $1");
