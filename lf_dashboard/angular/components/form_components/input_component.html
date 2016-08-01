@@ -1,4 +1,4 @@
 <div class="form-group">
-    <label>{{$ctrl.label}}</label>
-    <input type="{{$ctrl.fieldType}}" placeholder="{{$ctrl.placeholder}}" class="form-control">
+    <label ng-hide="$ctrl.noLabel">{{$ctrl.label}}</label>
+    <input class="form-control" type="{{$ctrl.fieldType}}" name="{{$ctrl.name}}" placeholder="{{$ctrl.placeholder}}" required="{{$ctrl.required}}">
 </div>

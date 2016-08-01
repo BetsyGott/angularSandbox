@@ -2,6 +2,8 @@
     'use strict';
     function inputComponentController($scope, $element, $attrs) {
         var ctrl = this;
+        ctrl.noLabel = false;
+        ctrl.required = false;
 
         // ctrl.handleModeChange = function() {
         
@@ -11,14 +13,18 @@
         // };
 
         ctrl.$onInit = function() {
-
+            
             // Set a default fieldType
             if (!ctrl.fieldType) {
                 ctrl.fieldType = 'text';
             }
 
             if (!ctrl.placeholder) {
-                ctrl.placeholder = ctrl.label;
+                ctrl.placeholder = ctrl.name;
+            }
+
+            if (!ctrl.label) {
+                ctrl.label = ctrl.name;
             }
         };
     }
@@ -29,7 +35,10 @@
         bindings: {
             label: "@",
             fieldType: "@",
-            placeholder: "@"
+            placeholder: "@",
+            noLabel: "@",
+            name: "@",
+            required: "@"
         }
     });
 })(window.angular);
